@@ -1,0 +1,230 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: #ecf2f8;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+body .container .article {
+  background-color: white;
+  position: absolute;
+  width: 50vw;
+  max-width: 80vw;
+  height: auto;
+  border-radius: 25px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 10px 20px 19px -8px rgba(158, 175, 194, 0.43);
+          box-shadow: 10px 20px 19px -8px rgba(158, 175, 194, 0.43);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .container .article img {
+  width: 40%;
+  height: inherit;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  display: block;
+}
+
+body .container .article .about {
+  margin: 35px;
+  text-align: justify;
+  vertical-align: baseline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .container .article .about h2 {
+  color: #48556a;
+  margin: 0;
+  font-weight: 700;
+}
+
+body .container .article .about p {
+  color: #48556a;
+}
+
+body .container .article .about .avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .article .about .avatar .Michelle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .container .article .about .avatar .Michelle img {
+  border-radius: 50%;
+  width: 15%;
+  margin-right: 10px;
+}
+
+body .container .article .about .avatar .Michelle .author #name,
+body .container .article .about .avatar .Michelle .author #date {
+  margin: 0;
+}
+
+body .container .article .about .avatar button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  width: 50px;
+}
+
+body .container .article .about .avatar button #share {
+  width: 100%;
+  height: auto;
+  background-color: #ecf2f8;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+body .social-share {
+  position: absolute;
+  top: 55%;
+  left: 70%;
+  -webkit-transform: translate(-55%, -70%);
+          transform: translate(-55%, -70%);
+  background-color: #48556a;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 20vw;
+}
+
+body .social-share p {
+  color: white;
+  display: inline-block;
+  margin: 15px;
+  letter-spacing: 5px;
+}
+
+body .social-share #social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body .social-share #social-media a {
+  text-decoration: none;
+  margin: 15px;
+}
+
+body .social-share #social-media a img {
+  width: 20px;
+  height: 20px;
+}
+
+body #hidden {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 950px) {
+  body {
+    font-size: 13px;
+  }
+  body .container .article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 70%;
+  }
+  body .container .article img {
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: inherit;
+    height: 35%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .container .article .about {
+    height: 100%;
+  }
+  body .container .article .about h2 {
+    vertical-align: auto;
+    font-size: 17px;
+  }
+  body .container .article .about .avatar .Michelle img {
+    height: auto;
+  }
+}
+/*# sourceMappingURL=article-preview.css.map */

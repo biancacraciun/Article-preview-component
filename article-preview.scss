@@ -1,0 +1,190 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+};
+
+body { 
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-weight: 500;
+
+    .container {
+        .article {
+            background-color: white;
+            position: absolute;
+            width: 50vw;
+            max-width: 80vw;
+            height: auto;
+            border-radius: 25px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 10px 20px 19px -8px rgba(158,175,194,0.43);
+    
+            display: flex;
+            flex-direction: row;
+
+            img {
+                width: 40%;
+                height: inherit;
+                border-top-left-radius: inherit;
+                border-bottom-left-radius: inherit;
+                display: block;
+            }
+
+            .about {
+               margin: 35px;
+               text-align: justify;
+               vertical-align: baseline;    
+
+               display: flex;
+               flex-direction: column;
+               justify-content: space-evenly;
+               
+                h2 {
+                   color: hsl(217, 19%, 35%);
+                   margin: 0;
+                   font-weight: 700;
+                }
+
+                p { 
+                    color: hsl(217, 19%, 35%);
+                }
+
+                .avatar {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .Michelle {
+                        display: flex;
+                        flex-direction: row;
+                        
+                        img {
+                            border-radius: 50%;
+                            width: 15%;
+                            margin-right: 10px;
+                        }
+
+                        .author {
+                            #name, 
+                            #date {
+                                margin: 0;
+                            }
+                        }
+                    }
+                    
+                    button {
+                        border: none; 
+                        background: none;
+                        outline: none;
+                        cursor: pointer;
+                        width: 50px;
+
+                        #share {
+                            width: 100%;
+                            height: auto;
+                            background-color: hsl(210, 46%, 95%);
+                            border: 1px solid transparent;
+                            border-radius: 50%;
+                            padding: 5px;
+                            display: flex;
+                            flex-direction: column;
+                            align-content: center;
+                            align-self: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .social-share {
+        position: absolute;
+        top: 55%;
+        left: 70%;
+        transform: translate(-55%, -70%);
+        background-color: hsl(217, 19%, 35%);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 20vw;
+
+        p {
+            color: white;
+            display: inline-block;
+            margin: 15px;
+            letter-spacing: 5px;
+        }
+
+        #social-media {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center; 
+            align-self: center;
+            align-content: center;
+
+            a {
+                text-decoration: none;
+                margin: 15px;
+    
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+              
+        } 
+    }
+
+    #hidden {
+        visibility: hidden;
+    }
+};
+
+
+@media only screen and (max-width: 950px) {
+    body {
+        font-size: 13px;
+
+        .container {
+
+            .article {
+                flex-direction: column;
+                justify-content: space-between;
+                width: 70%;
+
+                img {
+                    width: 100%;
+                    border-bottom-left-radius: 0;
+                    border-top-right-radius: inherit;
+                    height: 35%;
+                    object-fit: cover;
+                }
+
+                .about {
+                    height: 100%;
+
+                    h2 {
+                        vertical-align: auto;
+                        font-size: 17px;
+                    }
+
+                    .avatar {
+                        .Michelle {
+                            img {
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
